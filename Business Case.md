@@ -1,10 +1,9 @@
 # Business Case 
 
-The purpose of AIDAP is to make it easier for students, teachers, and staff to get the information they need for school, like class schedules, announcements, and deadlines, all in one place. Instead of searching through different websites, AIDAP lets you ask questions and get answers using chat or voice. This saves time and helps everyone stay up to date.  
-To reach this goal, AIDAP is built with the following important features for each group of users:
+The purpose of the AI-Powered Digital Assistant Platform (AIDAP) is to enhance the academic experience by providing a single point of access to resources and information. Currently, it is inefficient for administrators, employees, and students to use numerous platforms. Multiple portals are difficult to use for simple, repeated operations, and fragmented systems cause communication delays and missed deadlines. By providing a unified conversational interface for tasks like scheduling, deadlines, and notifications, AIDAP fills a demand for a digital assistant.
 
-**General:**  
-AIDAP gives everyone a simple way to find campus information and services just by talking or typing, instead of hunting through lots of websites or apps. It connects to things like LMS, course registration, calendars, and school email. You can use it on your phone or computer, and it always tries to understand what you mean, even if you use everyday words. It also follows all privacy rules to keep your data safe.
+The overall objective of the suggested solution is to improve academic and student access to information, and it is meant for usage by lecturers, administrators, maintainers, and students. The program has an interface that is customized to the user. Students can access timetables, grades, and deadlines through the conversational interface that the AIDAP offers. The solution gives lecturers faster course analytics and quicker access to student communication. All things considered, by adding a conversational interface and tailored data, the system outperforms the current ones, including LMS. Although the technology has made monitoring and maintenance easier, even the administrators and maintainers can profit from it.
+
 
 **Students:**  
 Students can ask questions about their classes, assignments, or school events and get fast answers in one place. They’ll receive reminders and alerts about important deadlines, changes, or announcements. The system also lets them see all their important information, like schedules and grades, on a personal dashboard. Students can change their notification or language settings and get support on different devices, with answers coming quickly and reliably.
