@@ -1,45 +1,22 @@
-# AIDAP Overview
+# Business Case 
 
-The purpose of **AIDAP** is to make it easier for students, teachers, and staff to get the information they need for school, like class schedules, announcements, and deadlines, all in one place. Instead of searching through different websites, AIDAP lets you ask questions and get answers using **chat or voice**. This saves time and helps everyone stay up to date.
+The purpose of AIDAP is to make it easier for students, teachers, and staff to get the information they need for school, like class schedules, announcements, and deadlines, all in one place. Instead of searching through different websites, AIDAP lets you ask questions and get answers using chat or voice. This saves time and helps everyone stay up to date.  
+To reach this goal, AIDAP is built with the following important features for each group of users:
 
----
+**General:**  
+AIDAP gives everyone a simple way to find campus information and services just by talking or typing, instead of hunting through lots of websites or apps. It connects to things like LMS, course registration, calendars, and school email. You can use it on your phone or computer, and it always tries to understand what you mean, even if you use everyday words. It also follows all privacy rules to keep your data safe.
 
-## Key Features by User Group
+**Students:**  
+Students can ask questions about their classes, assignments, or school events and get fast answers in one place. They’ll receive reminders and alerts about important deadlines, changes, or announcements. The system also lets them see all their important information, like schedules and grades, on a personal dashboard. Students can change their notification or language settings and get support on different devices, with answers coming quickly and reliably.
 
-### General
-- Provides a simple way to find campus information and services by talking or typing instead of browsing multiple websites or apps.  
-- Connects to LMS, course registration, calendars, and school email.  
-- Accessible on **phone or computer**, with natural language understanding for everyday words.  
-- Follows all privacy rules to keep data safe.
+**Lecturers:**  
+Lecturers can put course materials and announcements into AIDAP so students see them right away. They can send reminders, check how their class is doing, like grades or participation, and quickly answer student questions. If something unusual happens, like many students missing the same assignment, the lecturer gets an alert. They can also manage TA access and trust that only the right people can make changes.
 
-### Students
-- Ask questions about classes, assignments, or events and get fast answers in one place.  
-- Receive **reminders and alerts** about deadlines, changes, or announcements.  
-- View schedules, grades, and other important info on a **personal dashboard**.  
-- Customize **notification and language settings**; support on multiple devices.  
-- Answers are delivered quickly and reliably.
+**Administration:**  
+Administrators use AIDAP to manage the connection to other school systems, control who can use which features, and send messages or announcements to everyone. They can see how the system is being used and make sure everything runs smoothly and follows school rules, even as the university grows (in population).
 
-### Lecturers
-- Publish course materials and announcements so students see them immediately.  
-- Send reminders, check class progress (grades or participation), and answer student questions quickly.  
-- Receive alerts for unusual situations, such as many students missing the same assignment.  
-- Manage **TA access** while ensuring only authorized people can make changes.
+**System Maintainers:**  
+System maintainers are the technical team. They make sure AIDAP is always running, even when updates happen, and keep track of its performance. They set up and fine-tune the AI parts, monitor for issues, back up important data, and make the system better over time, all while keeping it secure so only the right people can fix problems.
 
-### Administration
-- Manage connections to other school systems.  
-- Control **who can use which features**.  
-- Send messages or announcements to all users.  
-- Monitor system usage to ensure smooth operation and compliance with school rules.  
-- Ensure scalability as the university grows.
-
-### System Maintainers
-- Keep AIDAP running **24/7**, including during updates.  
-- Monitor performance and fine-tune AI components.  
-- Detect and resolve issues quickly.  
-- Backup important data and improve the system over time.  
-- Maintain security so only authorized personnel can make changes.
-
-### Data Source Systems
-- Connect to the university’s main programs, such as class lists, calendar, and email, using **standard APIs**.  
-- Alert the right people if a system goes down or has a problem.  
-- Ensure data consistency, correctness, and up-to-date information across all connected systems.
+**Data Source Systems:**  
+AIDAP connects to all the university’s main programs, like class lists, calendar, and email, using standard ways of sharing data. If one system goes down or has a problem, AIDAP lets the right people know and tries to keep everything working together smoothly. It always checks that the data is correct and up to date.
