@@ -16,21 +16,21 @@ This deliverable focuses on identifying the foundational requirements and concer
 
 1. **Use Case Models**  
    Description of functional interactions of the system with its users.  
-   **URL:** [Insert URL to Use Case Models file]
+   **URL:** [Use Cases.md]
 
 2. **Quality Attributes**  
    Key quality attributes that the system must satisfy (e.g., performance, security, usability, reliability).  
-   **URL:** [Insert URL to Quality Attributes file]
+   **URL:** [Quality Attributes.md]
 
 3. **System Constraints**  
    Constraints that may limit the design or implementation (technological, regulatory, or operational).  
-   **URL:** [Insert URL to System Constraints file]
+   **URL:** [Constraints.md]
 
 4. **Architectural Concerns**  
    Important concerns addressed in the architecture (e.g., scalability, maintainability, extensibility).  
-   **URL:** [Insert URL to Architectural Concerns file]
+   **URL:** [Concerns.md]
 
 5. **Business Case**  
    Description of the purpose, benefits, and value of the system from a business perspective.  
-   **URL:** [Insert URL to Business Case file]
+   **URL:** [Business Case.md]
 
