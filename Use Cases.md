@@ -16,4 +16,7 @@ This table presents the main use cases for our system, showing what the system d
 
 ## Use Case Diagram
 
-![Use Case Diagram]()
+<img width="553" height="653" alt="image" src="https://github.com/user-attachments/assets/065653ab-b0f1-400d-b635-e0735447deb1" />
+
+
+
