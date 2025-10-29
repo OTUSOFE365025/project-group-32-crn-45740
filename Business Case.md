@@ -17,4 +17,7 @@ Administrators use AIDAP to manage the connection to other school systems, contr
 **System Maintainers:**  
 System maintainers are the technical team. They make sure AIDAP is always running, even when updates happen, and keep track of its performance. They set up and fine-tune the AI parts, monitor for issues, back up important data, and make the system better over time, all while keeping it secure so only the right people can fix problems.
 
+**Data Source Systems:**
+AIDAP connects to all the university’s main programs, like class lists, calendar, and email, using standard ways of sharing data. If one system goes down or has a problem, AIDAP lets the right people know and tries to keep everything working together smoothly. It always checks that the data is correct and up to date.
+
 
