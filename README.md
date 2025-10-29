@@ -14,9 +14,6 @@ The objective of this project is to demonstrate a methodological set of steps in
 
 ---
 
-## Deliverables
-All artifacts for this project are submitted through the GitHub Classroom repository provided by the instructor. Contributions are tracked via GitHub commits and the KanBan project board. Issues and tagging have been leveraged to manage tasks efficiently throughout the project lifecycle.
-
 ### Deliverable 1 – Requirements Analysis
 **Due Date:** Oct 28  
 This deliverable focuses on identifying the foundational requirements and concerns before commencing the ADD process.
