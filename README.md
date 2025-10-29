@@ -12,25 +12,24 @@ All artifacts for this project are submitted through the GitHub Classroom reposi
 **Due Date:** Oct 28  
 This deliverable focuses on identifying the foundational requirements and concerns before commencing the ADD process.
 
-#### Artifacts:
+## Deliverables
 
-1. **Use Case Models**  
-   Description of functional interactions of the system with its users.  
-   **URL:** [/Use Cases.md]
+### Use Case Models
+Description of functional interactions of the system with its users.  
+**[View Use Case Models](./Use%20Cases.md)**
 
-2. **Quality Attributes**  
-   Key quality attributes that the system must satisfy (e.g., performance, security, usability, reliability).  
-   **URL:** [/Quality Attributes.md]
+### Quality Attributes
+Key quality attributes that the system must satisfy (e.g., performance, security, usability, reliability).  
+**[View Quality Attributes](./Quality%20Attributes.md)**
 
-3. **System Constraints**  
-   Constraints that may limit the design or implementation (technological, regulatory, or operational).  
-   **URL:** [/Constraints.md]
+### System Constraints
+Constraints that may limit the design or implementation (technological, regulatory, or operational).  
+**[View System Constraints](./Constraints.md)**
 
-4. **Architectural Concerns**  
-   Important concerns addressed in the architecture (e.g., scalability, maintainability, extensibility).  
-   **URL:** [/Concerns.md]
+### Architectural Concerns
+Important concerns addressed in the architecture (e.g., scalability, maintainability, extensibility).  
+**[View Architectural Concerns](./Concerns.md)**
 
-5. **Business Case**  
-   Description of the purpose, benefits, and value of the system from a business perspective.  
-   **URL:** [/Business Case.md]
-
+### Business Case
+Description of the purpose, benefits, and value of the system from a business perspective.  
+**[View Business Case](./Business%20Case.md)**
