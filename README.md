@@ -3,9 +3,9 @@
 ## Student Information
 - **Group Number:** [32]  
 - **Students:**  
-  1. [Hanzalah Imran] – [Student Number 1]  
-  2. [Mohid Sohail] – [Student Number 2]  
-  3. [Burhanuddin Mohammed] – [100943760]  
+  1. Hanzalah Imran – [Student Number 1]  
+  2. Mohid Sohail – [Student Number 2]  
+  3. Burhanuddin Mohammed – 100943760  
 
 ---
 
