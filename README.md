@@ -1,5 +1,14 @@
 # SOFE3650 - Software Architecture Design Project – Attribute Driven Design (ADD)
 
+## Student Information
+- **Group Number:** [32]  
+- **Students:**  
+  1. [Hanzalah Imran] – [Student Number 1]  
+  2. [Mohid Sohail] – [Student Number 2]  
+  3. [Burhanuddin Mohammed] – [100943760]  
+
+---
+
 ## Project Overview
 The objective of this project is to demonstrate a methodological set of steps in designing a software architecture using the Attribute Driven Design (ADD) approach. The project applies ADD to a set of requirements (listed in Appendix A) to create a structured and well-documented architecture for the software application.
 
