@@ -1,11 +1,14 @@
 # SOFE3650 - Software Architecture Design Project – Attribute Driven Design (ADD)
 
-## Student Information
-- **Group Number:** [32]  
-- **Students:**  
-  1. Hanzalah Imran – [100912657]  
-  2. Mohid Sohail – 100912993  
-  3. Burhanuddin Mohammed – 100943760  
+**Course:** SOFE 3650 – Software Architecture  
+**Instructor:** Dr. Hani Sami  
+**Date:** 28 September 2025  
+**Group Members:**  
+- Mohid Sohail  100912993 - Use Cases/ Use case Diagram and Quality Attributes
+- Hanzalah Imran  100912657 - Constraints 
+- Burhanuddin Mohammed 100943760 - Business Case and Concerns
+
+There was no single person working on one thing. We all worked as a group on each deliverable. 
 
 ---
 
@@ -13,6 +16,9 @@
 The objective of this project is to demonstrate a methodological set of steps in designing a software architecture using the Attribute Driven Design (ADD) approach. The project applies ADD to a set of requirements (listed in Appendix A) to create a structured and well-documented architecture for the software application.
 
 ---
+
+## Deliverables
+All artifacts for this project are submitted through the GitHub Classroom repository provided by the instructor. Contributions are tracked via GitHub commits and the KanBan project board. Issues and tagging have been leveraged to manage tasks efficiently throughout the project lifecycle.
 
 ### Deliverable 1 – Requirements Analysis
 **Due Date:** Oct 28  
