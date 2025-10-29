@@ -4,7 +4,7 @@ This table presents the main use cases for our system, showing what the system d
 
 | Use Case | Use Case Name                       | Description |
 |----------|-----------------------------------|-------------|
-| UC-1     | Access academic information, and generate reports | When a user asks a question regarding grades, deadlines, or events, the AI understands the question, retrieves the data, and provides the information. Can also be used by administrators to study patterns. |
+| UC-1     | Access academic information | When a user asks a question regarding grades, deadlines, or events, the AI understands the question, retrieves the data, and provides the information. |
 | UC-2     | Publish course announcement         | Lecturers can publish announcements to a group of students within the same course. |
 | UC-3     | Automated personalized notifications | The system sends automated notifications on upcoming events or deadlines based on the user's preferences. |
 | UC-4     | Synchronize data                    | The system’s data is synced with university sources and alerts maintainers if a problem occurs or if data is not synchronized. |
