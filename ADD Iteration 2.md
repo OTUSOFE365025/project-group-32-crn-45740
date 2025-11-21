@@ -1,24 +1,11 @@
 ### Iteration 2: Identifying Structures to Support Primary Functionality
-This section presents the results of the activities that are performed in each of the
-steps of ADD in the second iteration of the design process for the FCAPS system.
-In this iteration, we move from the generic and coarse-grained descriptions of
-functionality used in iteration 1 to more detailed decisions that will drive imple-
-mentation and hence the formation of development teams.
-This movement from the generic to the specific is intentional, and built into
-the ADD method. We cannot design everything up front, so we need to be dis-
-ciplined about which decisions we make, and when, to ensure that the design
-is done in a systematic way, addressing the biggest risks first and moving from
-there to ever finer details. Our goal for the first iteration was to establish an over-
-all system structure. Now that this goal has been met, our new goal for this sec-
-ond iteration is to reason about the units of implementation, which affect team
-
 
 Establishing a general system structure was our aim for the initial iteration. After achieving this objective,
 our new objective for this second iteration is to consider the units of implementation, which have an
 impact on interfaces, team formation, and the ways in which development activities can be assigned,
 outsourced, and carried out in sprints.
 
-### STEP 2:
+### ADD STEP 2: Establish Iteration Goal by Selecting Drivers
 
 Finding structures that support primary functionality is a general architectural concern that iteration 2
 addresses.
@@ -29,13 +16,14 @@ In this second iteration the architect considers the system's primary use cases:
 - UC-3
 - UC-4
 
-### STEP 3:
+### ADD STEP 3: Choose One or More Elements of the System to Refine
 
 In this iteration, the components that will be improved are the modules found in the distinct layers that the
 two reference architectures from the prior cycle defined. Generally speaking, the functionality of the
 system is supported by the elements connected to modules located in various tiers
 
-### STEP 4:
+### ADD STEP 4: Choose One or More Design Concepts That Satisfy the
+Selected Drivers
 
 | Design Decisions and Location | Rationale |
 | :--- | :--- |
@@ -44,7 +32,7 @@ system is supported by the elements connected to modules located in various tier
 | Decompose domain object sin to general components | Every domain object is broken down into modules across levels. While the server manages business logic and database storage, the client manages user interaction (screens and request formats). This division makes the system simpler to modify and comprehend. Decomposing the layers into modules to provide functionality is the only viable option. |
 | between the client and API Gateway, Use REST/JSON-based APIs | One popular formatting tool is REST/JSON. The client and server are clearly separated when REST/JSON is used. Because their interactions occur through API requests and answers, this facilitates correct integration with external systems and the AI service, making it simpler to update or test the individual modules. Since they would add complexity at this point, alternatives were not taken into consideration. |
 
-### STEP 5:
+### ADD STEP 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
 | Design Decision | Rationale |
 | :--- | :--- |
@@ -54,8 +42,7 @@ system is supported by the elements connected to modules located in various tier
 | Use standard web connections (REST/JSON APIs) | We use a standard communication style (request and response). This allows all parts of the system to talk to each other easily and lets us fix or change one part without breaking the others. |
 | Connect outside systems to specific modules | We handle the connections to outside school systems (like the calendar or class registration) specifically inside the AI Service Agent and synchronization tools to keep them organized. |
 
-### STEP 6:
-
+### STEP 6: Sketch Views and Record Design Decisions
 
 ![Diagram 1](https://private-us-east-1.manuscdn.com/sessionFile/So1bponG8mWPZkdYXrKUQT/sandbox/T14lIWiU3bfQjHSxT8X03u-images_1763699546983_na1fn_L3RtcC9wZGZfaW1hZ2VzLzIvMDA1.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvU28xYnBvbkc4bVdQWmtkWVhyS1VRVC9zYW5kYm94L1QxNGxJV2lVM2JmUWpIU3hUOFgwM3UtaW1hZ2VzXzE3NjM2OTk1NDY5ODNfbmExZm5fTDNSdGNDOXdaR1pmYVcxaFoyVnpMekl2TURBMS53ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=BV7Id7JzfGqeu5tmmlnnCCfNHar57k4xeHboF8c6jvkEhhv7wmYwaUXOqlrFL07y1bCI~dvvPlACDc8eqSr~47bWNM3Fi2jvxzg7BtlFR-x7Ompij-MTT7PAgtvWkxwi5ozMuazcvm7uDqXp2KdPwUimgBibACaRm7QqITaGF7YHAqDJuB0hAqwiIjkChVc7o49VWKaN9gYJC-Yh9wYpnTDrtYhX4qmoqtC0RzZ81geLrDtn~PKVXioM7m~kyY~5DzGlm~w5yNEb2Jnvk~DXKjNSvR7kUkoxZFmFBROUxYWy6GexXdwqTqh7AgkiBCntU8JZtkiGJ9-bDEhA8emd7g__)
 
@@ -114,6 +101,8 @@ system is supported by the elements connected to modules located in various tier
 | Data Access Module | batchUpsert() | Writes or updates multiple database records in bulk during synchronization. |
 | Database | Accessed through batchUpsert() | Stores academic datasets and confirms successful commit operations. |
 | Communication Manager | send email/SMS alert | Notifies the maintainer in case of sync failure, sending alerts according to system configuration. |
+
+## ADD Step 7: Perform Analysis of Current Design
 
 | Not addressed | Partially addressed | Completely addressed | Justification |
 | :--- | :--- | :--- | :--- |
