@@ -77,6 +77,8 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 
 <img width="1814" height="723" alt="image" src="https://github.com/user-attachments/assets/e8548019-0770-4166-9901-2cf18fa8b0c6" />
 
+<img width="741" height="426" alt="image" src="https://github.com/user-attachments/assets/b598d99c-dd8b-4b44-becf-3b4c28511b72" />
+
 
 ### Step 7: Perform Analysis of Current Design and Review IterationGoal and Achievement of Design Purpose
 
