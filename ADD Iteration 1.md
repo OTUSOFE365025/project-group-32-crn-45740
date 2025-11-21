@@ -43,7 +43,8 @@ Concerns
 - CRN-5: All development must be guided by a strong, clearly defined initial architecture.
 - CRN-9: To guarantee their independence and maintainability, system components should have distinct boundaries.
 
-![Diagram 1](https://i.imgur.com/9g3J40m.png)
+<img width="441" height="471" alt="image" src="https://github.com/user-attachments/assets/2756faef-cced-4f95-b667-3b094c5204fb" />
+
 
 ### ADD Step 3: Choose One or More Elements of the System to Refine
 
