@@ -45,3 +45,6 @@ Important concerns addressed in the architecture (e.g., scalability, maintainabi
 ### Business Case
 Description of the purpose, benefits, and value of the system from a business perspective.  
 **[View Business Case](./Business%20Case.md)**
+
+DRAW.io for PHASE 2 : https://drive.google.com/file/d/1yp86nHsIFYevfGbZAPrvHbomapTTwcE3/view?usp=sharing 
+PDF with Phase 2 https://drive.google.com/file/d/13NOXAjCTroKBjTQp-im6dQE8a_qT1hHo/view?usp=sharing 
