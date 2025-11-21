@@ -108,15 +108,15 @@ system is supported by the elements connected to modules located in various tier
 | | | UC-2 | Yes. A full sequence diagram for this use case was created. |
 | | | UC-3 | Yes. A full sequence diagram with a Scheduler was created. |
 | | | UC-4 | Yes. A full sequence diagram with a Synchronization Manager was created. |
-| | | QA-1 | No design decisions for performance were made in Iteration 2. |
-| | | QA-2 | No design decisions for performance were made in Iteration 2. |
-| | | QA-3 | An error-handling path was defined for data sync, but not for other areas. |
-| | | QA-5 | No design decisions for performance were made in Iteration 2. |
-| | | CON-3 | No new design decisions for multi-device support were made. |
-| | | CON-5 | No new design decisions for SSO authentication were made. |
-| | | CON-8 | No new design decisions for API integration were made. |
-| | | CON-9 | No design decisions for deployment or rollback were made. |
-| | | CRN-2 | No new design decisions for AI correctness were made. |
+| QA-1 | | | No design decisions for performance were made in Iteration 2. |
+| QA-2 | | | No design decisions for performance were made in Iteration 2. |
+| | QA-3 | | An error-handling path was defined for data sync, but not for other areas. |
+| QA-5 | | | No design decisions for performance were made in Iteration 2. |
+| CON-3 | | | No new design decisions for multi-device support were made. |
+| CON-5 | | | No new design decisions for SSO authentication were made. |
+| CON-8 | | | No new design decisions for API integration were made. |
+| CON-9 | | | No design decisions for deployment or rollback were made. |
+| CRN-2 | | | No new design decisions for AI correctness were made. |
 | | | CRN-3 | Yes. The system was decomposed into specific layers and components. |
 | | | CRN-5 | Yes. Detailed diagrams for all primary use cases were produced. |
-| | | CRN-9 | No new design decisions for component boundaries were made. |
+| CRN-9 | | | No new design decisions for component boundaries were made. |
