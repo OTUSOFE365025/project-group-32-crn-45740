@@ -62,7 +62,7 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 | Discarded: | This pattern combines the application logic and data management on a single server tier, which is less secure and scalable. It fails to provide the necessary separation of concerns to protect the database and does not adequately address security (QA-4) or reliability (QA-3). |
 
 
-### Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+### ADD Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
 | Design Decision and Location | Rationale |
 | :--- | :--- |
@@ -73,9 +73,10 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 | Instantiate a Client Data Access Module in the RIA client | To handle all communication with the application tier, a special module is added to the client. The module communicates with the backend via AJAX/Fetch API calls, guaranteeing real-time dashboard updates without necessitating complete page refreshes. This prevents academic information from being stored locally and keeps the user interface (UI) focused on interaction rather than data handling. By enabling dashboards to load data on demand without combining presentation logic and data retrieval, it also supports UC-3. |
 
 
-### Step 6: Sketch Views and Record Design Decisions
+### ADD Step 6: Sketch Views and Record Design Decisions
 
-![Diagram 2](https://i.imgur.com/Y1313eR.png)
+<img width="1814" height="723" alt="image" src="https://github.com/user-attachments/assets/e8548019-0770-4166-9901-2cf18fa8b0c6" />
+
 
 ### Step 7: Perform Analysis of Current Design and Review IterationGoal and Achievement of Design Purpose
 
