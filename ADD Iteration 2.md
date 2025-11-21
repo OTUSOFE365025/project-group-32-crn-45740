@@ -41,6 +41,17 @@ system is supported by the elements connected to modules located in various tier
 | Use standard web connections (REST/JSON APIs) | We use a standard communication style (request and response). This allows all parts of the system to talk to each other easily and lets us fix or change one part without breaking the others. |
 | Connect outside systems to specific modules | We handle the connections to outside school systems (like the calendar or class registration) specifically inside the AI Service Agent and synchronization tools to keep them organized. |
 
+### STEP 6:
+<img width="624" height="778" alt="image" src="https://github.com/user-attachments/assets/c366e90c-44ab-4583-837b-42e2c6938eea" />
+
+<img width="721" height="680" alt="image" src="https://github.com/user-attachments/assets/f063405b-24ba-497d-8ad2-8db32fc9ba80" />
+
+<img width="720" height="575" alt="image" src="https://github.com/user-attachments/assets/b6bdb4e6-c8c7-4c30-89a3-d0e345621f10" />
+
+## Sequence Diagrams: 
+<img width="1630" height="684" alt="image" src="https://github.com/user-attachments/assets/b2daed79-fca3-478b-af8e-f148ac28a5e0" />
+
+
 | Element | Methods | Description |
 | :--- | :--- | :--- |
 | User | Query Academic Info() | Initiates the request to query academic information and later receives and views the results. |
