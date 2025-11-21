@@ -86,14 +86,14 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 | | UC-2 | | Although rich user interface updates and content presentation are supported by the RIA architecture, there is no specific component designed for publishing lecturer announcements. Although there is infrastructure, the architecture does not fully define the feature. |
 | | UC-3 | | Although client-server communication and real-time dashboards are part of the design, no Notification Service was specifically instantiated. Automation is not fully designed, but there are some supporting components. |
 | | | UC-4 | For UC-4, a Synchronization Service was created with retry logic, API connections, and integration complexity isolation. |
-| | QA! | | RIA improves user responsiveness, but no specific performance tactics were designed. |
+| | QA1 | | RIA improves user responsiveness, but no specific performance tactics were designed. |
 | | | QA2 | RIA is chosen for a rich, responsive UI across devices, directly supporting usability. |
 | | QA3 | | The design choices don't mention specific tactics for failover, redundancy, or error handling beyond what the sync service provides, making this only partially addressed. |
 | | | QA5 | backend uses official university APIs and a service-oriented structure, satisfying interoperability fully. |
 | | | CON3 | RIA was selected because it supports multi-device access, satisfying this constraint. |
 | | | CON5 | A Security Component using university SSO was explicitly instantiated. |
 | | | CON8 | Synchronization Service and service-oriented backend integrate only using official APIs. |
-| | | CON9 | Three-tier structure provides separation but no deployment/rollback strategy described. |
+| | CON9 | | Three-tier structure provides separation but no deployment/rollback strategy described. |
 | | | CRN2 | The AI Interaction Component directly addresses reliability and correctness of AI responses. |
 | | CRN3 | | It's an inherent benefit, not a targeted design choice. |
 | | CRN5 | | The existence of several partially addressed drivers suggests the architecture is not yet "strong" or "clearly defined" enough to be considered fully complete. |
