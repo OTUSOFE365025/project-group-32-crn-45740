@@ -42,11 +42,15 @@ system is supported by the elements connected to modules located in various tier
 | Connect outside systems to specific modules | We handle the connections to outside school systems (like the calendar or class registration) specifically inside the AI Service Agent and synchronization tools to keep them organized. |
 
 ### STEP 6:
-<img width="624" height="778" alt="image" src="https://github.com/user-attachments/assets/c366e90c-44ab-4583-837b-42e2c6938eea" />
 
-<img width="721" height="680" alt="image" src="https://github.com/user-attachments/assets/f063405b-24ba-497d-8ad2-8db32fc9ba80" />
+This is the class diagram
 
-<img width="720" height="575" alt="image" src="https://github.com/user-attachments/assets/b6bdb4e6-c8c7-4c30-89a3-d0e345621f10" />
+![Diagram 1](https://private-us-east-1.manuscdn.com/sessionFile/So1bponG8mWPZkdYXrKUQT/sandbox/T14lIWiU3bfQjHSxT8X03u-images_1763699546983_na1fn_L3RtcC9wZGZfaW1hZ2VzLzIvMDA1.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvU28xYnBvbkc4bVdQWmtkWVhyS1VRVC9zYW5kYm94L1QxNGxJV2lVM2JmUWpIU3hUOFgwM3UtaW1hZ2VzXzE3NjM2OTk1NDY5ODNfbmExZm5fTDNSdGNDOXdaR1pmYVcxaFoyVnpMekl2TURBMS53ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=BV7Id7JzfGqeu5tmmlnnCCfNHar57k4xeHboF8c6jvkEhhv7wmYwaUXOqlrFL07y1bCI~dvvPlACDc8eqSr~47bWNM3Fi2jvxzg7BtlFR-x7Ompij-MTT7PAgtvWkxwi5ozMuazcvm7uDqXp2KdPwUimgBibACaRm7QqITaGF7YHAqDJuB0hAqwiIjkChVc7o49VWKaN9gYJC-Yh9wYpnTDrtYhX4qmoqtC0RzZ81geLrDtn~PKVXioM7m~kyY~5DzGlm~w5yNEb2Jnvk~DXKjNSvR7kUkoxZFmFBROUxYWy6GexXdwqTqh7AgkiBCntU8JZtkiGJ9-bDEhA8emd7g__)
+
+This is the system arch layered design
+
+![Diagram 2](https://private-us-east-1.manuscdn.com/sessionFile/So1bponG8mWPZkdYXrKUQT/sandbox/T14lIWiU3bfQjHSxT8X03u-images_1763699546985_na1fn_L3RtcC9wZGZfaW1hZ2VzLzIvMDA3.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvU28xYnBvbkc4bVdQWmtkWVhyS1VRVC9zYW5kYm94L1QxNGxJV2lVM2JmUWpIU3hUOFgwM3UtaW1hZ2VzXzE3NjM2OTk1NDY5ODVfbmExZm5fTDNSdGNDOXdaR1pmYVcxaFoyVnpMekl2TURBMy53ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=hgPec732TzSHrw9uVCbiGStA5Dtg-JtkeMuTn0R88DtMZ7MlDPTppG41o7rbhzr7F7w5-wmBCjYUuQELRtfsE8LRSRLfMTHXKGhZuk4T1N1bmIjF7CPt5rl9ORci-AbwraA5wn6E5gDLuzzFtlV0pNJY~pv81hE6gKokL8DjLRY88UtzxjqxAA1ffqvWnBRjx1cnh9MIcrL2VcYv7Mo8nErCRb48LiFrZYt2y6JlSPt421GYr5cKy6Dn9NTmIkfVi6cKYBuMxgJP5pviOLNV5HIKlEJ0bZo7~slZTIkud4GB7U0xJEuJyRiCjboAUkc1M0V5SiBSe5vSdDjwaYD1ww__)
+
 
 ## Sequence Diagrams: 
 <img width="1630" height="684" alt="image" src="https://github.com/user-attachments/assets/b2daed79-fca3-478b-af8e-f148ac28a5e0" />
@@ -63,14 +67,6 @@ system is supported by the elements connected to modules located in various tier
 | Interaction Controller | fetchRequestedData() formalResponseData() | Orchestrates retrieval of requested data and returns formatted results upward. |
 | Data Access Module | executeSelectQuery() | Executes the actual database query and returns a result set. |
 | Database | executeSelectQuery() | Stores academic information and returns the requested dataset when queried. |
-
-This is the class diagram
-
-![Diagram 1](https://private-us-east-1.manuscdn.com/sessionFile/So1bponG8mWPZkdYXrKUQT/sandbox/T14lIWiU3bfQjHSxT8X03u-images_1763699546983_na1fn_L3RtcC9wZGZfaW1hZ2VzLzIvMDA1.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvU28xYnBvbkc4bVdQWmtkWVhyS1VRVC9zYW5kYm94L1QxNGxJV2lVM2JmUWpIU3hUOFgwM3UtaW1hZ2VzXzE3NjM2OTk1NDY5ODNfbmExZm5fTDNSdGNDOXdaR1pmYVcxaFoyVnpMekl2TURBMS53ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=BV7Id7JzfGqeu5tmmlnnCCfNHar57k4xeHboF8c6jvkEhhv7wmYwaUXOqlrFL07y1bCI~dvvPlACDc8eqSr~47bWNM3Fi2jvxzg7BtlFR-x7Ompij-MTT7PAgtvWkxwi5ozMuazcvm7uDqXp2KdPwUimgBibACaRm7QqITaGF7YHAqDJuB0hAqwiIjkChVc7o49VWKaN9gYJC-Yh9wYpnTDrtYhX4qmoqtC0RzZ81geLrDtn~PKVXioM7m~kyY~5DzGlm~w5yNEb2Jnvk~DXKjNSvR7kUkoxZFmFBROUxYWy6GexXdwqTqh7AgkiBCntU8JZtkiGJ9-bDEhA8emd7g__)
-
-This is the system arch layered design
-
-![Diagram 2](https://private-us-east-1.manuscdn.com/sessionFile/So1bponG8mWPZkdYXrKUQT/sandbox/T14lIWiU3bfQjHSxT8X03u-images_1763699546985_na1fn_L3RtcC9wZGZfaW1hZ2VzLzIvMDA3.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvU28xYnBvbkc4bVdQWmtkWVhyS1VRVC9zYW5kYm94L1QxNGxJV2lVM2JmUWpIU3hUOFgwM3UtaW1hZ2VzXzE3NjM2OTk1NDY5ODVfbmExZm5fTDNSdGNDOXdaR1pmYVcxaFoyVnpMekl2TURBMy53ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=hgPec732TzSHrw9uVCbiGStA5Dtg-JtkeMuTn0R88DtMZ7MlDPTppG41o7rbhzr7F7w5-wmBCjYUuQELRtfsE8LRSRLfMTHXKGhZuk4T1N1bmIjF7CPt5rl9ORci-AbwraA5wn6E5gDLuzzFtlV0pNJY~pv81hE6gKokL8DjLRY88UtzxjqxAA1ffqvWnBRjx1cnh9MIcrL2VcYv7Mo8nErCRb48LiFrZYt2y6JlSPt421GYr5cKy6Dn9NTmIkfVi6cKYBuMxgJP5pviOLNV5HIKlEJ0bZo7~slZTIkud4GB7U0xJEuJyRiCjboAUkc1M0V5SiBSe5vSdDjwaYD1ww__)
 
 | Element | Method | Description |
 | :--- | :--- | :--- |
