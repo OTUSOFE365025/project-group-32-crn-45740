@@ -79,6 +79,24 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 
 <img width="741" height="426" alt="image" src="https://github.com/user-attachments/assets/b598d99c-dd8b-4b44-becf-3b4c28511b72" />
 
+# System Components Overview
+
+| Component             | Description                                                                                          |
+|-----------------------|--------------------------------------------------------------------------------------------------|
+| **API Gateway**       | Acts as the main interface between client and server, validating API requests and routing them securely through backend services. |
+| **Chat Flow Manager** | Maintains conversational context, manages dialogue progression, and ensures consistency throughout user interactions. |
+| **Local Cache**       | Temporarily stores recent messages, announcements, and dashboard data to enable quick access and offline functionality during poor network conditions. |
+| **Helpers and Utilities** | Provides common helper functions like error handling, data validation, and logging to support backend operations and maintain code clarity. |
+| **Data Entities**     | Represents core business objects such as users, courses, schedules, and announcements within the system. |
+| **Client Data Processor** | Manages client-side data logic including input validation, session management, request formatting, and user preferences (e.g., language settings). |
+| **Dashboard**         | Displays personalized information such as grades, schedules, and important announcements.        |
+| **AI Execution Engine** | Executes AI and natural language processing tasks to interpret user queries and generate relevant responses using stored and live data. |
+| **Interaction Controller** | Directs client requests to the correct business modules and coordinates workflows across backend components. |
+| **Message Handler**   | Oversees the formatting and interpretation of messages exchanged between the client and backend, ensuring proper request and response handling. |
+| **AI Service Agent**  | Connects the AI-driven platform to external university systems (e.g., LMS, calendar, registration, email) to sync data and recover from connection failures. |
+| **Data Access Module** | Interfaces between business logic and the database, securely handling data retrieval, updates, logging chats, and more. |
+| **Chatbot UI**        | Handles displaying chat messages and managing user inputs/outputs, forwarding conversation queries to the backend. |
+
 
 ### Step 7: Perform Analysis of Current Design and Review IterationGoal and Achievement of Design Purpose
 
