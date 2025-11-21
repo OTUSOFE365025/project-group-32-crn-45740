@@ -1,100 +1,212 @@
-### ADD Step 1: Review Inputs
+# ADD Iteration 1 — AIDAP
+
+## Table of Contents
+- [Step 1: Review Inputs](#step-1-review-inputs)
+- [Step 2: Select the Drivers](#step-2-select-the-drivers)
+- [Step 3: Choose Elements to Refine](#step-3-choose-elements-to-refine)
+- [Step 4: Select Design Concepts](#step-4-select-design-concepts)
+- [Step 5: Instantiate Architectural Elements](#step-5-instantiate-architectural-elements)
+- [Step 6: Sketch Views](#step-6-sketch-views)
+- [Step 7: Analysis](#step-7-analysis)
+
+---
+
+## Step 1: Review Inputs
+
+### Design Purpose and Requirements
 
 | Category | Details |
 | :--- | :--- |
-| Design purpose | This is a greenfield system from a mature domain. The purpose is to produce a sufficiently detailed design to support the construction of the AI-powered digital assistant platform (AIDAP) |
-| Primary Functional requirements | UC1: Because it directly supports the core AI interaction<br>UC2: Because it directly supports course work<br>UC3: Because it directly supports student interaction<br>UC4: Because it directly supports technical issues regarding data synchronization |
+| **Design Purpose** | This is a greenfield system from a mature domain. [cite_start]The purpose is to produce a sufficiently detailed design to support the construction of the AI-Powered Digital Assistant Platform (AIDAP)[cite: 7]. |
+| **Primary Functional Requirements** | [cite_start]**UC1:** Because it represents core lecturer workflows.<br>**UC2:** Because it represents core student interaction [cite: 9][cite_start].<br>**UC3:** Because of the technical issues associated with data synchronization[cite: 9].<br>**UC5:** Because it represents the core AI interaction capability of the system. |
 
+### Quality Attribute Scenarios
 
-| Scenario Id | Importance to customer | Difficulty of implementation |
+| Scenario ID | Importance to the Customer | Difficulty of Implementation according to Architect |
 | :--- | :--- | :--- |
-| QA-1 | High | medium |
-| QA-2 | high | high |
-| QA-3 | high | high |
-| QA-4 | medium | high |
-| QA-5 | high | medium |
+| **QA1** | [cite_start]High [cite: 14] | [cite_start]High [cite: 25] |
+| **QA2** | [cite_start]High [cite: 16] | [cite_start]Medium [cite: 24] |
+| **QA3** | [cite_start]High [cite: 18] | [cite_start]High [cite: 26] |
+| **QA4** | [cite_start]High [cite: 14] | [cite_start]High [cite: 27] |
+| **QA5** | [cite_start]Medium [cite: 20] | [cite_start]Medium [cite: 28] |
 
+[cite_start]**Selection:** From this list, QA1, QA2, QA3, and QA4 are selected as drivers[cite: 29].
 
-Quality Attributes: Among the quality attributes, QA-1, QA-2, QA-3, and QA-5 were chosen as drivers.
+### Constraints & Concerns
+[cite_start]All of the constraints and architectural concerns discussed are included as drivers in the following step[cite: 30, 31].
 
-Constraints: All constraints are a part of the drivers
+---
 
-Concerns: All concerns are part of the drivers
+## Step 2: Select the Drivers
 
-### ADD Step 2:Establish Iteration Goal by Selecting Drivers
+[cite_start]This is the first iteration in the design of a greenfield system[cite: 33]. The architect keeps in mind all of the drivers that influence the general structure of the system; however, the architect must be mindful of the following:
 
-This is the first iteration in the design of a greenfield system, so the iteration goal is to achieve the overall architecture of the system keeping in mind:
+### Quality Attributes
+* [cite_start]**QA-1:** Security, Usability, Performance[cite: 35].
+* [cite_start]**QA-2:** Performance, Reliability, Availability, Usability[cite: 36, 37].
+* [cite_start]**QA-3:** Reliability, Interoperability[cite: 38].
+* **QA-4:** Performance, Usability.
 
-Quality attributes:
-- QA-1: Performance
-- QA-2: Usability
-- QA-3: Reliability
-- QA-5: Interoperability
+### Constraints
+* **CON-1:** System must be deployed in the cloud and scale with the number of users.
+* [cite_start]**CON-2:** System must connect to external university systems through standard APIs[cite: 42].
+* [cite_start]**CON-5:** Dashboards must provide real-time data and be responsive on both web and mobile[cite: 41].
+* **CON-8:** The AI responses must be generated within approximately two seconds.
 
-Constraints
-- CON-3: The system must work across web, mobile, and voice devices.
-- CON-5: All user authentication must go through the official university SSO system.
-- CON-8: The platform can only connect to approved university systems (like the LMS, calendar, etc.) via official APIs.
-- CON-9: System updates must happen with zero downtime and have a rollback option.
+### Concerns
+* **CRN-2:** System must remain scalable even under increasing load.
+* **CRN-3:** Strong access control must be enforced all over.
+* **CRN-4:** Integration with external university systems must be reliable.
+* **CRN-7:** Personalization must be supported using stored interaction history.
 
-Concerns
-- CRN-2: The AI needs to be dependable and give users accurate answers.
-- CRN-3: Future feature additions must be easily supported by the system's design.
-- CRN-5: All development must be guided by a strong, clearly defined initial architecture.
-- CRN-9: To guarantee their independence and maintainability, system components should have distinct boundaries.
+<br>
 
-<img width="456" height="480" alt="image" src="https://github.com/user-attachments/assets/f2083e81-2faf-4443-9786-18df18fbf979" />
+> **[Insert Figure 1: Context Diagram of AIDAP System Here]**
+>
+> *Figure 1. Context Diagram of AIDAP System*
 
+---
 
-### ADD Step 3: Choose One or More Elements of the System to Refine
+## Step 3: Choose One or More Elements of the System to Refine
 
-We want to refine the entire AIDAP because it is a greenfield system. We are using a top-down approach. We are going to focus on the entire system and then decompose it into smaller components with each iteration. For now we just want to develop the overall architecture.
+[cite_start]We will refine the **entire system** in Iteration 1 because it is a greenfield system[cite: 61].
 
-### ADD Step 4: Choose One or More Design Concepts That Satisfy the Selected Drivers
+---
 
-| Design choice and location | Rationale |
+## Step 4: Choose One or More Design Concepts that Satisfy the Selected Drivers
+
+### Design Decisions
+
+| Design Decisions and Location | Rationale |
 | :--- | :--- |
-| Use a Rich Internet Application (RIA) Architecture for the frontend. | Because the RIA architecture satisfies the requirement to support web and mobile devices, AIDAP can operate directly in the browser without the need for installation (CON-3). In order to support interactive use cases like course work (UC2) and student interaction (UC3), as well as usability (QA-2), it offers a rich, responsive user interface. It also enhances performance (QA-1) and maintains the application's speed by managing some processing on the client side. |
-| Discarded: | Web application:<br>This reference architecture makes it difficult to produce a good user interface because it focuses on server-side rendering and requires full page refreshes.<br><br>Mobile application:<br>The system needs to work on laptops as well. Limiting it to mobiles invalidates our constraint 3 which is, The assistant shall support both text and voice communication modes for all user types and function across mobile, web, and voice-assistant devices. |
-| Use a Service Application Architect feature for the backend. | Since AIDAP needs to integrate with several external institutional systems (LMS, registration, calendar) through standard APIs (CON-8), a service-oriented backend was chosen. This architecture effectively isolates AIDAP from these external systems, fostering high interoperability (QA-5) and reliability (QA-3). Additionally, it addresses the need for modularity and clearly defined interfaces by dividing important tasks like AI processing and authentication into manageable services (CRN-9). |
-| Discarded: | Micro Services:<br>High complexity for iteration 1 of a greenfield system. |
-| Deploy the system using a Three-Tier Deployment pattern. | This pattern gives our app a clear physical structure by splitting it into three parts: the Client Tier (the user's browser), the Web/App Tier (where the app runs), and the Database Tier (where the data is stored). Using these three layers is a common way to build reliable and scalable web applications. It also makes the system more secure because the database is kept away from direct public access. |
-| Discarded: | This pattern combines the application logic and data management on a single server tier, which is less secure and scalable. It fails to provide the necessary separation of concerns to protect the database and does not adequately address security (QA-4) or reliability (QA-3). |
+| **Logically structure the client part using the Rich Internet Application (RIA) reference architecture** | [cite_start]The RIA reference architecture allows AIDAP to run directly in the browser without installation and still provides a rich user responsive interface[cite: 65]. It supports web and mobile dashboards (**CON-5**) and keeps interactions fast and usable (**QA-2, QA-4**). [cite_start]It also allows for interactive dashboards and features from the browser (**UC-2, UC-5**) which involves processing on the client side[cite: 65]. This helps the system stay responsive even under heavy load. |
+| **Logically structure the server using a Service-Based Application architecture** | A service-based backend is selected because the AIDAP server does not include its own user interface. [cite_start]This separates the major responsibilities such as authentication, dashboard generation, AI processing, and data synchronization, and it supports integration with external university systems using the standard APIs (**CON-2, UC-3**)[cite: 65]. It also helps keep the system reliable and have fast AI responses (**QA-3, QA-4**). |
+| **Physically structure the system using a Three-Tier Deployment Pattern** | [cite_start]A three-tier structure is selected because AIDAP will run in the cloud and must scale as the number of users grows (**CON-1**), and also keep academic data stored securely in the database layer (**CON-3**)[cite: 66]. [cite_start]This deployment supports availability and reliability (**QA-3**) and keeps responsibilities clearly separated; the client focuses on interaction, the application tier handles AI and synchronization logic, and the database tier manages persistent records[cite: 66]. |
+| **Deploy the system as a Cloud-Hosted Web Service** | Cloud deployment satisfies **CON-1**. It also simplifies integration with external university systems (**CON-2**) and supports the performance requirements of the AI component (**QA-4**). |
+| **Use API-Based Integration for Communication with External University Systems** | [cite_start]The system needs to connect to LMS, registration, and calendar systems through standard APIs (**CON-2**)[cite: 42]. [cite_start]Using API connectors creates a clear separation between AIDAP and those external systems, and it helps keep data synchronization reliable by allowing retry logic when something temporarily fails (**QA-3, UC-3**)[cite: 65]. |
 
+### Discarded Alternatives
 
-### Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+| Discarded Alternative | Reason for Discarding |
+| :--- | :--- |
+| **Web-application** | [cite_start]This reference architecture focuses on server-side rendering and requires full page refreshes[cite: 65]. This makes it difficult to provide a rich user interface with real-time updating dashboards. |
+| **Mobile Application** | [cite_start]The system needs to work the same way on laptops and browsers too, not just on phones[cite: 65]. Lecturers are more likely to use computers for publishing course material, so limiting AIDAP to mobile would prevent consistency across platforms. |
+| **Microservices Architecture** | [cite_start]Although microservices is scalable, it adds complexity for Iteration 1, and the drivers can be achieved using a simpler service-based structure[cite: 65]. |
+
+---
+
+## Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
 | Design Decision and Location | Rationale |
 | :--- | :--- |
-| Instantiate a Synchronization Service in the application tier. | This is essential to guaranteeing the system's dependability (QA-3) and interoperability (QA-5). As mandated by CON-8 and UC-4, it is in charge of overseeing all data flows and connections with external institutional systems (LMS, Registration, Calendar). Because complicated integration logic is isolated, the system is easier to maintain. |
-| Instantiate a Security Component for authentication and authorization in the application tier. | Because it addresses the non-negotiable security constraint to use the official university SSO (CON-5), this decision is crucial. This part will oversee all authorization and authentication, guaranteeing that users can only access information that they are allowed to view (CRN-4). It is a fundamental component of trust and system integrity. |
-| Instantiate an AI Interaction Component in the application tier. | This is essential to guaranteeing the system's dependability (QA-3) and interoperability (QA-5). As mandated by CON-8 and UC-4, it is in charge of overseeing all data flows and connections with external institutional systems (LMS, Registration, Calendar). Because complicated integration logic is isolated, the system is easier to maintain. |
-| Remove isolated storage from the client side | If grades, chat history, or personal information are stored in the browser or a device-local store, they can be accessed by anyone using that device which conflicts with CON-4. Also Local copies can easily become stale which can conflict with CRN-10 |
-| Instantiate a Client Data Access Module in the RIA client | To handle all communication with the application tier, a special module is added to the client. The module communicates with the backend via AJAX/Fetch API calls, guaranteeing real-time dashboard updates without necessitating complete page refreshes. This prevents academic information from being stored locally and keeps the user interface (UI) focused on interaction rather than data handling. By enabling dashboards to load data on demand without combining presentation logic and data retrieval, it also supports UC-3. |
+| **Instantiate a Client Data Access Module in the RIA client** | [cite_start]A dedicated module is added to the client to manage all communication with the application tier[cite: 70]. Using AJAX/Fetch API calls, the module communicates with the backend ensuring real-time dashboard updates, without requiring full page refreshes. [cite_start]This keeps the UI focused on interaction rather than data handling and avoids storing academic information locally[cite: 70]. It also supports **UC-2** by allowing dashboards to load data on demand without mixing presentation logic and data retrieval. |
+| **Instantiate a Synchronization Service in the application tier** | [cite_start]A separate component is used to manage the connections with external university systems, as required by **CON-2** and **UC-3**[cite: 69]. This separates integration logic for future improvements in reliability. |
+| **Instantiate a Security Component for authentication and authorization** | [cite_start]Because users can only access data they are allowed to see, an early security component is needed to manage login and permissions (**CRN-3**)[cite: 69]. Detailed interfaces will be defined in later iterations. |
+| **Instantiate an AI Interaction Component in the application tier** | [cite_start]To support **UC-5**, a component is added to handle communication with the AI model and separate conversational logic from other services[cite: 69]. |
 
+---
 
-### Step 6: Sketch Views and Record Design Decisions
+## Step 6: Sketch Views and Record Design Decisions
 
-<img width="1589" height="642" alt="image" src="https://github.com/user-attachments/assets/19a601d9-bc15-48bf-97ce-df4a512eea79" />
+### Module View
 
+<br>
 
-### Step 7: Perform Analysis of Current Design and Review IterationGoal and Achievement of Design Purpose
+> **[Insert Figure 2: Module View of AIDAP System Here]**
+>
+> *Figure 2. Module View of AIDAP System*
 
-| Not addressed | Partially Addressed | Completely Addressed | Design Decisions Made During the Iteration |
+<br>
+
+| Element | Responsibility |
+| :--- | :--- |
+| **Chatbot UI** | [cite_start]Displays the chat messages and also handles the user inputs and outputs for the conversation queries, sending them to the backend[cite: 86]. |
+| **Dashboard** | [cite_start]The dashboard shows personalized data like the grades, schedules and important announcements[cite: 78]. |
+| **Client Data Processor** | [cite_start]Manages the client side data logic, like validating user input, handling the sessions, formatting requests before they get sent to the API, and also managing language and preference settings[cite: 80]. |
+| **Local Cache** | [cite_start]Temporarily stores any recent messages, announcements, and dashboard data for quick and offline access, or under weaker network conditions[cite: 82]. |
+| **API Gateway** | [cite_start]The main entry point in between the client and the server, receives API requests, validates them and directs them through the backend, all while maintaining security[cite: 84]. |
+| **Message Handler** | [cite_start]Manages how the messages and data are exchanged between the client and backend by structuring and interpreting the API requests as well as the response formats[cite: 91]. |
+| **Interaction Controller** | [cite_start]Coordinates client requests to the appropriate business module, it also coordinates workflows between the different backend components that exist[cite: 92]. |
+| **Chat Flow Manager** | [cite_start]Keeps track of context, manages the dialogue flow, and makes sure that the user interactions are consistent[cite: 93]. |
+| **AI Execution Engine** | [cite_start]Runs the AI and natural language processing logic responsible for interpreting user questions and generating responses using the stores and live data[cite: 94]. |
+| **Data Entities** | [cite_start]Represent the core business entities like users, courses, schedules, and announcements[cite: 95]. |
+| **Data Access Module** | [cite_start]Manages the connection between the business logic and the database, performing all the data retrieval and updates in a secure way; this includes reading, writing, updating user data, logging chats, etc.[cite: 97]. |
+| **Helpers and Utilities** | [cite_start]Provides the shared helper functions such as error handling, data validation, and logging, these are used across multiple layers to help keep the code clean and support backend operations[cite: 98]. |
+| **AI Service Agent** | [cite_start]Connects the AIDAP with the external university systems like the LMS, calendar, registration, and email platforms to both sync and recover data from failed connection attempts[cite: 99]. |
+
+### Deployment View
+
+<br>
+
+> **[Insert Figure 3: Initial Deployment Diagram for the FCAPS system Here]**
+>
+> *Figure 3. Initial deployment diagram for the FCAPS system*
+
+<br>
+
+| Element | Responsibility |
+| :--- | :--- |
+| **User Device (web/mobile browser)** | Hosts the client side application that is used by students and lectures to access AIDAP on a web or mobile browser. [cite_start]Uses HTTPS to send requests to the server[cite: 109, 113]. |
+| **AIDAP Application Server (cloud-deployed)** | Hosts all the server-side business logic, including service interfaces, the API gateway, security, and all iteration components. Handles dashboard display and rendering, notifications, AI interaction, and manages synchronization. [cite_start]Checks requests for routing to external systems[cite: 110, 114]. |
+| **Cloud Database Server** | Stores external system’s synchronized information, user profiles, dashboard data, interaction history with the AI model, notification preferences. [cite_start]Accessed through SQL/ORM using the application server[cite: 105]. |
+| **LMS System** | [cite_start]LMS system is one of the external university learning platforms from which the AIDAP system retrieves the course assignments, materials, grades and analytics using REST API[cite: 107]. |
+| **Registration System** | [cite_start]An external system that provides academic enrollment records, and course registration information retrieved by the AIDAP using REST API[cite: 115]. |
+| **Calendar System** | [cite_start]External calendar that provides academic deadlines, events and schedules that AIDAP syncs using REST API[cite: 118]. |
+| **Authentication System** | [cite_start]External identification checker, that verifies user credentials allowing for secure login before accessing the AIDAP[cite: 119]. |
+
+### Reference Architecture
+
+<br>
+
+> **[Insert Figure 4: Reference Architecture Diagram for the FCAPS system Here]**
+>
+> *Figure 4. Reference Architecture diagram for the FCAPS system*
+
+<br>
+
+| Relationship | Description |
+| :--- | :--- |
+| **Between User Device and AIDAP Application Server** | [cite_start]Communication takes place over secure HTTPS for all client–server requests[cite: 111]. |
+| **Between AIDAP Application Server and Cloud Database Server** | [cite_start]The server communicates with the cloud database using SQL and ORM for storing and retrieving any academic data[cite: 106]. |
+| **Between AIDAP Application Server and LMS System** | [cite_start]Integration is done using the REST APIs to fetch the course materials, grades, and analytics[cite: 108]. |
+| **Between AIDAP Application Server and Registration System** | [cite_start]The AIDAP retrieves the enrollment and course registration data using REST APIs[cite: 112]. |
+| **Between AIDAP Application Server and Calendar System** | [cite_start]The AIDAP retrieves the academic events and schedules by using REST APIs[cite: 112]. |
+| **Between AIDAP Application Server and Authentication System** | [cite_start]Login authentication is performed using an Auth API[cite: 117]. |
+
+---
+
+## Step 7: Perform Analysis of Current Design
+
+Review Iteration Goal and Achievement of Design Purpose.
+
+| Not Addressed | Partially Addressed | Completely Addressed | Design Decisions Made During the Iteration |
 | :--- | :--- | :--- | :--- |
-| | | UC-1 | The design defined backend services that retrieve grades and events through authorized APIs and instantiated an AI Interaction Component. This allows for real-time responses to academic questions. |
-| | UC-2 | | Although rich user interface updates and content presentation are supported by the RIA architecture, there is no specific component designed for publishing lecturer announcements. Although there is infrastructure, the architecture does not fully define the feature. |
-| | UC-3 | | Although client-server communication and real-time dashboards are part of the design, no Notification Service was specifically instantiated. Automation is not fully designed, but there are some supporting components. |
-| | | UC-4 | For UC-4, a Synchronization Service was created with retry logic, API connections, and integration complexity isolation. |
-| | | QA1 | RIA improves user responsiveness, but no specific performance tactics were designed. |
-| | | QA2 | RIA is chosen for a rich, responsive UI across devices, directly supporting usability. |
-| | QA3 | | The design choices don't mention specific tactics for failover, redundancy, or error handling beyond what the sync service provides, making this only partially addressed. |
-| | | QA5 | backend uses official university APIs and a service-oriented structure, satisfying interoperability fully. |
-| | | CON3 | RIA was selected because it supports multi-device access, satisfying this constraint. |
-| | | CON5 | A Security Component using university SSO was explicitly instantiated. |
-| | | CON8 | Synchronization Service and service-oriented backend integrate only using official APIs. |
-| | | CON9 | Three-tier structure provides separation but no deployment/rollback strategy described. |
-| | | CRN2 | The AI Interaction Component directly addresses reliability and correctness of AI responses. |
-| | CRN3 | | It's an inherent benefit, not a targeted design choice. |
-| | CRN5 | | The existence of several partially addressed drivers suggests the architecture is not yet "strong" or "clearly defined" enough to be considered fully complete. |
-| | | CRN9 | Communication is structured via APIs between client and backend services. |
+| | | **UC-1** | [cite_start]The RIA client architecture properly supports uploading any content & viewing analytics functionalities[cite: 152]. |
+| | | **UC-2** | [cite_start]Fully supported through the responsive web/mobile dashboard that is implemented[cite: 152]. |
+| | **UC-3** | | [cite_start]Partially supported because synchronization components do exist but the retry and conflict resolution are not defined yet[cite: 152]. |
+| | | **UC-5** | [cite_start]Fully supported by the AI Execution Engine and the Chat Flow Manager[cite: 152]. |
+| | **QA-1** | | Partially supported because the Security Component isn’t defined yet. [cite_start]The API Gateway makes the access controlled and reliable and the RIA architecture ensures that the interface stays fast and also user-friendly[cite: 152]. |
+| | **QA-2** | | [cite_start]The RIA client, cloud deployment, and separation of concerns improves responsiveness and helps dashboards load quickly, but the iteration has not yet defined consistent performance guarantees[cite: 152]. |
+| | **QA-3** | | [cite_start]Partially supported since reliability is addressed conceptually but the failure recovery is not designed yet[cite: 153]. |
+| | **QA-4** | | AI processing is isolated in its own component, which helps keep responses fast and helps improve usability, but the specific performance guarantees have not been defined yet. |
+| | | **CON-1** | [cite_start]Designing the system with a three-tier deployment with client, application, and database layers supports scaling in the cloud environment[cite: 153]. |
+| | | **CON-2** | [cite_start]Fully satisfied through API integration and synchronization components for the external systems[cite: 153]. |
+| | **CON-3** | | [cite_start]A Security Component was added to manage login and access control, however, the detailed role based permissions and secure session handling are not defined yet[cite: 153]. |
+| | **CON-4** | | The system includes notification handling, and notification preferences are stored in the database. However, specific notification delivery rules are not designed yet. |
+| | | **CON-5** | [cite_start]Fully satisfied using the RIA architecture, and responsive dashboard[cite: 153]. |
+| | **CON-6** | | [cite_start]A Synchronization Service and API based integration were created, allowing for data syncing, but retry handling and conflict handling have not been defined yet[cite: 153]. |
+| | **CON-7** | | The Security Component and Data Access Module provide a secure boundary for retrieving student data, but detailed rules have not been defined yet. |
+| | **CON-8** | | Partially addressed because the AI is isolated for faster responses, but the performance guarantees and load-balancing are not specified or defined yet. |
+| **CON-9** | | | [cite_start]No relevant decisions made[cite: 153]. |
+| **CON-10** | | | No relevant decisions made. |
+| **CON-11** | | | No relevant decisions made. |
+| **CON-12** | | | No relevant decisions made. |
+| **CRN-1** | | | No relevant decisions made. |
+| | | **CRN-2** | [cite_start]The cloud based deployment and the service based backend allow the components to scale as the usage continues to grow[cite: 153]. |
+| **CRN-3** | | | [cite_start]No relevant decisions made[cite: 153]. |
+| | **CRN-4** | | The system supports reliable external communication, but decisions for retries and handling failures are still to be implemented. |
+| **CRN-5** | | | [cite_start]No relevant decisions made[cite: 153]. |
+| **CRN-6** | | | No relevant decisions made. |
+| | **CRN-7** | | The interaction history will be stored, but the decision of how personalization will work from a user perspective has not been designed yet. |
+| | | **CRN-8** | The RIA architecture ensures very consistent interface behavior across browsers and devices. |
+| **CRN-9** | | | [cite_start]No relevant decisions made[cite: 153]. |
