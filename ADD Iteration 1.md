@@ -11,7 +11,7 @@
 
 ---
 
-## Step 1: Review Inputs
+## ADD Step 1: Review Inputs
 
 ### Design Purpose and Requirements
 
@@ -37,7 +37,7 @@
 
 ---
 
-## Step 2: Select the Drivers
+## ADD Step 2: Select the Drivers
 
 [cite_start]This is the first iteration in the design of a greenfield system[cite: 33]. The architect keeps in mind all of the drivers that influence the general structure of the system; however, the architect must be mindful of the following:
 
@@ -67,13 +67,13 @@
 
 ---
 
-## Step 3: Choose One or More Elements of the System to Refine
+## ADD Step 3: Choose One or More Elements of the System to Refine
 
 [cite_start]We will refine the **entire system** in Iteration 1 because it is a greenfield system[cite: 61].
 
 ---
 
-## Step 4: Choose One or More Design Concepts that Satisfy the Selected Drivers
+## ADD Step 4: Choose One or More Design Concepts that Satisfy the Selected Drivers
 
 ### Design Decisions
 
@@ -95,7 +95,7 @@
 
 ---
 
-## Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+## ADD Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
 | Design Decision and Location | Rationale |
 | :--- | :--- |
@@ -106,7 +106,7 @@
 
 ---
 
-## Step 6: Sketch Views and Record Design Decisions
+## ADD Step 6: Sketch Views and Record Design Decisions
 
 ### Module View
 
@@ -175,7 +175,7 @@
 
 ---
 
-## Step 7: Perform Analysis of Current Design
+## ADD Step 7: Perform Analysis of Current Design
 
 Review Iteration Goal and Achievement of Design Purpose.
 
