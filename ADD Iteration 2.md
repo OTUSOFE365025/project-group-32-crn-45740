@@ -48,9 +48,7 @@ system is supported by the elements connected to modules located in various tier
 
 <img width="739" height="695" alt="image" src="https://github.com/user-attachments/assets/ddb660c8-bc6b-4656-81a1-96de42cefbb2" />
 
-
 ![Diagram 2](https://private-us-east-1.manuscdn.com/sessionFile/So1bponG8mWPZkdYXrKUQT/sandbox/T14lIWiU3bfQjHSxT8X03u-images_1763699546985_na1fn_L3RtcC9wZGZfaW1hZ2VzLzIvMDA3.webp?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvU28xYnBvbkc4bVdQWmtkWVhyS1VRVC9zYW5kYm94L1QxNGxJV2lVM2JmUWpIU3hUOFgwM3UtaW1hZ2VzXzE3NjM2OTk1NDY5ODVfbmExZm5fTDNSdGNDOXdaR1pmYVcxaFoyVnpMekl2TURBMy53ZWJwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=hgPec732TzSHrw9uVCbiGStA5Dtg-JtkeMuTn0R88DtMZ7MlDPTppG41o7rbhzr7F7w5-wmBCjYUuQELRtfsE8LRSRLfMTHXKGhZuk4T1N1bmIjF7CPt5rl9ORci-AbwraA5wn6E5gDLuzzFtlV0pNJY~pv81hE6gKokL8DjLRY88UtzxjqxAA1ffqvWnBRjx1cnh9MIcrL2VcYv7Mo8nErCRb48LiFrZYt2y6JlSPt421GYr5cKy6Dn9NTmIkfVi6cKYBuMxgJP5pviOLNV5HIKlEJ0bZo7~slZTIkud4GB7U0xJEuJyRiCjboAUkc1M0V5SiBSe5vSdDjwaYD1ww__)
-
 ## Sequence Diagrams: 
 <img width="1630" height="684" alt="image" src="https://github.com/user-attachments/assets/b2daed79-fca3-478b-af8e-f148ac28a5e0" />
 | Element | Methods | Description |
