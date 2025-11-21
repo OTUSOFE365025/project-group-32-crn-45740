@@ -1,4 +1,17 @@
-### Iteration 2
+### Iteration 2: Identifying Structures to Support Primary Functionality
+This section presents the results of the activities that are performed in each of the
+steps of ADD in the second iteration of the design process for the FCAPS system.
+In this iteration, we move from the generic and coarse-grained descriptions of
+functionality used in iteration 1 to more detailed decisions that will drive imple-
+mentation and hence the formation of development teams.
+This movement from the generic to the specific is intentional, and built into
+the ADD method. We cannot design everything up front, so we need to be dis-
+ciplined about which decisions we make, and when, to ensure that the design
+is done in a systematic way, addressing the biggest risks first and moving from
+there to ever finer details. Our goal for the first iteration was to establish an over-
+all system structure. Now that this goal has been met, our new goal for this sec-
+ond iteration is to reason about the units of implementation, which affect team
+
 
 Establishing a general system structure was our aim for the initial iteration. After achieving this objective,
 our new objective for this second iteration is to consider the units of implementation, which have an
