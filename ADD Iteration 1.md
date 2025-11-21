@@ -86,7 +86,7 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 | | UC-2 | | Although rich user interface updates and content presentation are supported by the RIA architecture, there is no specific component designed for publishing lecturer announcements. Although there is infrastructure, the architecture does not fully define the feature. |
 | | UC-3 | | Although client-server communication and real-time dashboards are part of the design, no Notification Service was specifically instantiated. Automation is not fully designed, but there are some supporting components. |
 | | | UC-4 | For UC-4, a Synchronization Service was created with retry logic, API connections, and integration complexity isolation. |
-| | | QA1 | RIA improves user responsiveness, but no specific performance tactics were designed. |
+| | QA! | | RIA improves user responsiveness, but no specific performance tactics were designed. |
 | | | QA2 | RIA is chosen for a rich, responsive UI across devices, directly supporting usability. |
 | | QA3 | | The design choices don't mention specific tactics for failover, redundancy, or error handling beyond what the sync service provides, making this only partially addressed. |
 | | | QA5 | backend uses official university APIs and a service-oriented structure, satisfying interoperability fully. |
