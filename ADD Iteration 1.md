@@ -79,6 +79,9 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 
 <img width="741" height="426" alt="image" src="https://github.com/user-attachments/assets/b598d99c-dd8b-4b44-becf-3b4c28511b72" />
 
+<img width="517" height="728" alt="image" src="https://github.com/user-attachments/assets/6afc58b0-d4e7-4960-8b5f-21d1d52fdd49" />
+
+
 # System Components Overview
 
 | Component             | Description                                                                                          |
