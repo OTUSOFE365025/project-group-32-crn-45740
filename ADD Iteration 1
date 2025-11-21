@@ -1,1 +1,41 @@
+ADD iteration 1
 
+
+Step 1: Review Inputs 
+Category
+Details
+Design purpose
+This is a greenfield system from a mature domain. The purpose is to produce a sufficiently detailed design to support the construction of the AI-powered digital assistant platform (AIDAP)
+Primary Functional requirements
+UC1: Because it directly supports the core AI interaction
+UC2: Because it directly supports course work
+UC3: Because it directly supports student interaction
+UC4: Because it directly supports technical issues regarding data synchronization
+
+
+
+Scenario Id
+Importance to customer
+Difficulty of implementation
+QA-1
+High
+medium
+QA-2
+high
+high
+QA-3
+high
+high
+QA-4
+medium
+high
+QA-5
+high
+medium
+
+
+Quality Attributes: Among the quality attributes, QA-1, QA-2, QA-3, and QA-5 were chosen as drivers.
+
+Constraints: All constraints are a part of the drivers
+
+Concerns: All concerns are part of the drivers
