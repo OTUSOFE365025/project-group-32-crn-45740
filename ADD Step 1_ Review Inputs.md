@@ -43,7 +43,8 @@ Concerns
 - CRN-5: All development must be guided by a strong, clearly defined initial architecture.
 - CRN-9: To guarantee their independence and maintainability, system components should have distinct boundaries.
 
-![Diagram 1](https://i.imgur.com/9g3J40m.png)
+<img width="456" height="480" alt="image" src="https://github.com/user-attachments/assets/f2083e81-2faf-4443-9786-18df18fbf979" />
+
 
 ### ADD Step 3: Choose One or More Elements of the System to Refine
 
@@ -74,7 +75,8 @@ We want to refine the entire AIDAP because it is a greenfield system. We are usi
 
 ### Step 6: Sketch Views and Record Design Decisions
 
-![Diagram 2](https://i.imgur.com/Y1313eR.png)
+<img width="1589" height="642" alt="image" src="https://github.com/user-attachments/assets/19a601d9-bc15-48bf-97ce-df4a512eea79" />
+
 
 ### Step 7: Perform Analysis of Current Design and Review IterationGoal and Achievement of Design Purpose
 
