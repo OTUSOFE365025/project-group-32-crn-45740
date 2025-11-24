@@ -1,4 +1,4 @@
-### Iteration 3: Identifying Structures to Support Primary Functionality
+### Iteration 3: Addressing Quality Attribute Drivers
 
 Establishing a general system structure was our aim for the initial iteration. After achieving this objective,
 our new objective for this second iteration is to consider the units of implementation, which have an
