@@ -1,29 +1,20 @@
 ### Iteration 3: Addressing Quality Attribute Drivers
 
-In this iteration, we refine the architecture to specifically address high-priority Quality Attributes that were not fully resolved in previous iterations: **Performance (QA-1)**, **Security (QA-4)**, and **Reliability (QA-3)**.
+This section presents the results of the activities that are performed in each of the steps of ADD in the third iteration of the design process. Building on the fundamental structural decisions made in iterations 1 and 2, we can now start to reason about the fulfillment of some of the more important quality attributes.
 
-### ADD Step 1: Review Inputs
+### Step 2: Establish Iteration Goal by Selecting Drivers
 
-| Category | Details |
-| :--- | :--- |
-| **Design Purpose** | Refine the system to ensuring high performance, security for sensitive data, and reliability when connecting to external systems. |
-| **Primary Drivers** | **QA-1 (Performance):** Requests answered within 2 seconds.<br>**QA-4 (Security):** Encrypt communication and restrict access.<br>**QA-3 (Reliability):** Resilience against external system failures (Circuit Breaking). |
-| **Constraints** | CON-9 (Zero downtime/rollback), CON-8 (Official APIs only). |
+For this iteration, the architect focuses on three specific quality attribute scenarios that were prioritized as high-risk drivers:
+* **QA-1 (Performance):** The system answers student queries regarding grades within 2 seconds on average during high-load periods.
+* **QA-3 (Reliability):** The system maintains stability and provides fallback responses when external university APIs (LMS, Calendar) fail or time out.
+* **QA-4 (Security):** The system enforces strict role-based access control (RBAC) on every request to ensure students cannot access lecturer-specific data.
 
-### ADD Step 2: Establish Iteration Goal
+### Step 3: Choose One or More Elements of the System to Refine
 
-The goal of this iteration is to select specific design tactics to satisfy **Performance**, **Security**, and **Reliability**. Previous iterations defined *what* the components are; this iteration defines *how* they behave under stress and secure conditions.
-
-In this third iteration the architect considers the system's quality attributes:
-- QA-1
-- QA-3
-- QA-4
-
-### ADD STEP 3: Choose One or More Elements of the System to Refine
-
-In this iteration, the components that will be improved are the modules found in the distinct layers that the
-two reference architectures from the prior cycle defined. Generally speaking, the functionality of the
-system is supported by the elements connected to modules located in various tiers
+The elements that will be refined in this iteration are:
+1.  **Data Access Module:** To address performance via caching.
+2.  **RequestService (API Gateway):** To address security enforcement.
+3.  **SyncController & AI Service Agent:** To address reliability and fault tolerance.
 
 ### ADD STEP 4: Choose One or More Design Concepts That Satisfy the
 Selected Drivers
