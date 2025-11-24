@@ -10,16 +10,14 @@ In this iteration, we refine the architecture to specifically address high-prior
 | **Primary Drivers** | **QA-1 (Performance):** Requests answered within 2 seconds.<br>**QA-4 (Security):** Encrypt communication and restrict access.<br>**QA-3 (Reliability):** Resilience against external system failures (Circuit Breaking). |
 | **Constraints** | CON-9 (Zero downtime/rollback), CON-8 (Official APIs only). |
 
-### ADD STEP 2: Establish Iteration Goal by Selecting Drivers
+### ADD Step 2: Establish Iteration Goal
 
-Finding structures that support primary functionality is a general architectural concern that iteration 2
-addresses.
+The goal of this iteration is to select specific design tactics to satisfy **Performance**, **Security**, and **Reliability**. Previous iterations defined *what* the components are; this iteration defines *how* they behave under stress and secure conditions.
 
-In this second iteration the architect considers the system's primary use cases:
-- UC-1
-- UC-2
-- UC-3
-- UC-4
+In this third iteration the architect considers the system's quality attributes:
+- QA-1
+- QA-3
+- QA-4
 
 ### ADD STEP 3: Choose One or More Elements of the System to Refine
 
