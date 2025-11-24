@@ -2,6 +2,14 @@
 
 In this iteration, we refine the architecture to specifically address high-priority Quality Attributes that were not fully resolved in previous iterations: **Performance (QA-1)**, **Security (QA-4)**, and **Reliability (QA-3)**.
 
+### ADD Step 1: Review Inputs
+
+| Category | Details |
+| :--- | :--- |
+| **Design Purpose** | Refine the system to ensuring high performance, security for sensitive data, and reliability when connecting to external systems. |
+| **Primary Drivers** | **QA-1 (Performance):** Requests answered within 2 seconds.<br>**QA-4 (Security):** Encrypt communication and restrict access.<br>**QA-3 (Reliability):** Resilience against external system failures (Circuit Breaking). |
+| **Constraints** | CON-9 (Zero downtime/rollback), CON-8 (Official APIs only). |
+
 ### ADD STEP 2: Establish Iteration Goal by Selecting Drivers
 
 Finding structures that support primary functionality is a general architectural concern that iteration 2
