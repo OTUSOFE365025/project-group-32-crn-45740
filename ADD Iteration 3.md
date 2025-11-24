@@ -1,9 +1,6 @@
 ### Iteration 3: Addressing Quality Attribute Drivers
 
-Establishing a general system structure was our aim for the initial iteration. After achieving this objective,
-our new objective for this second iteration is to consider the units of implementation, which have an
-impact on interfaces, team formation, and the ways in which development activities can be assigned,
-outsourced, and carried out in sprints.
+In this iteration, we refine the architecture to specifically address high-priority Quality Attributes that were not fully resolved in previous iterations: **Performance (QA-1)**, **Security (QA-4)**, and **Reliability (QA-3)**.
 
 ### ADD STEP 2: Establish Iteration Goal by Selecting Drivers
 
