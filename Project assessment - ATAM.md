@@ -2,12 +2,26 @@
 
 ## 1. ATAM risk assessment table
 
+| Scenario Component     | Description                                                                                           |
+| :--------------------- | :-------------------------------------------------------------------------------------------------- |
+| **Scenario**           | A student initiates a dashboard session immediately following the broadcast of a new system announcement. |
+| **Quality Attributes** | Performance, Reliability, Availability, Usability                                                  |
+| **Stimulus**           | User triggers a read request for the personalized dashboard view.                                   |
+| **Environment**        | Standard operational runtime conditions.                                                            |
+| **Response**           | The system retrieves the view from the `DashboardCache` to minimize latency, while notification retrieval is enqueued for asynchronous background processing. |
+
+### Architectural Decision Analysis
+
+| Architecture Decision                           | Sensitivity | Tradeoff     | Risk       | Non‑Risk |
+| :--------------------------------------------- | :----------:| :----------- | :--------- | :------- |
+| **AD1** – Implementation of server-side `DashboardCache`     | S1, S3      | T1           | R1         | N2       |
+| **AD2** – Integration of dedicated `NotificationManager`      | S2          | T2           | R2         | N1       |
+| **AD3** – Utilization of asynchronous delivery mechanisms      | S2          | T2, T3       | R2, R3     | N3       |
+| **AD4** – Orchestration via `DashboardController`             | —           | —            | —          | N1       |
+
 
 ## 2. Description of the risks, non-risks, sensitivity, and tradeoffs
 
-```
-
-```
 
 ## 3. ATAM utility tree
 
