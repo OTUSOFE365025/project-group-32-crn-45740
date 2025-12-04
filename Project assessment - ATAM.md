@@ -22,6 +22,41 @@
 
 ## 2. Description of the risks, non-risks, sensitivity, and tradeoffs
 
+### Architectural Decisions 
+| AD ID | Decision | Simple Explanation |
+|:-----:|:---|:---|
+| **AD1** | Add DashboardCache | We are adding a temporary memory storage (cache) so the dashboard loads faster. |
+| **AD2** | Add NotificationManager | We are creating a specific tool just to handle sending alerts to users. |
+| **AD3** | Use async notification retrieval | We will load notifications in the background so the screen doesn't freeze while waiting for them. |
+| **AD4** | DashboardController prompts notifications | The main dashboard program is in charge of telling the system when to show alerts. |
+
+### Architectural Risks 
+| ID | Risk | Simple Explanation |
+|:--:|:---|:---|
+| **R1** | No refresh rules defined | We haven't decided exactly when to throw away old data yet, so users might see stale info. |
+| **R2** | Queue failure | If the system that lines up the messages breaks, some users might never get their alerts. |
+| **R3** | No backup plan for Cache | If the speed-memory tool breaks, we don't have a "Plan B" to keep things running smoothly. |
+
+### Architectural Non-Risks  
+| ID | Non-Risk | Simple Explanation |
+|:--:|:---|:---|
+| **N1** | Separation of Concerns | Because we split the dashboard and the alerts into different parts, one won't drag the other down. |
+| **N2** | Server-side Security | Keeping the saved data on our server is fast, and it keeps secret information away from the user's computer. |
+| **N3** | Background Processing | Because alerts happen in the background, the screen stays clickable and smooth even if there are a million alerts coming in. |
+
+### Sensitivity Points 
+| ID | Sensitivity Point | Simple Explanation |
+|:--:|:---|:---|
+| **S1** | Performance depends on Cache | If the temporary memory (cache) stops working, the whole system will get slow. |
+| **S2** | Responsiveness depends on Async vs. Sync | The dashboard will only feel fast if we successfully load alerts in the background. |
+| **S3** | Accuracy depends on Refresh rules | If we don't update the saved data often enough, users will see wrong information. |
+
+### Tradeoffs
+| ID | Tradeoff | Simple Explanation |
+|:--:|:---|:---|
+| **T1** | Speed vs. Freshness | Saving data (caching) makes the site fast, but sometimes users might see data that is a few seconds old. |
+| **T2** | Smoothness vs. Difficulty | Loading things in the background makes the app feel better to use, but it is harder for programmers to build. |
+| **T3** | Heavy Load vs. Accuracy | Saving data very aggressively helps handle lots of users at once, but the data might not be 100% up-to-date. |
 
 ## 3. ATAM utility tree
 
